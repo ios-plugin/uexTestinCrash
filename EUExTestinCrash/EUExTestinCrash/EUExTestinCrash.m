@@ -83,7 +83,12 @@ var param{
     NSLog(@"leaveBreadcrumb");
 }
 
+-(void)test:(NSMutableArray *)array{
 
+    NSArray *test=[[NSArray alloc] initWithObjects:@"1",@"2", nil];
+    for(int i=0;i<4;i++) NSLog(test[i]);
+   
+}
 
 
 
