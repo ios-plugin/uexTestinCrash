@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42772AA71BE062D7009DC9ED /* TestinAgent.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C659AC781AE88DEF00D885EB /* TestinAgent.framework */; };
 		C659AC791AE88DEF00D885EB /* EUExTestinCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = C659AC6D1AE88DEF00D885EB /* EUExTestinCrash.m */; };
 		C659AC7A1AE88DEF00D885EB /* TestinAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C659AC781AE88DEF00D885EB /* TestinAgent.framework */; };
 /* End PBXBuildFile section */
@@ -15,9 +16,10 @@
 		C659AC501AE88DA300D885EB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				42772AA71BE062D7009DC9ED /* TestinAgent.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexTestinCrash;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EUExTestinCrash/sourceCode",
@@ -272,6 +275,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CONFIGURATION_BUILD_DIR = $SRCROOT/uexTestinCrash;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EUExTestinCrash/sourceCode",

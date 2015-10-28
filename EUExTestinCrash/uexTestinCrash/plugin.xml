@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<uexplugins>
+    <plugin name="uexTestinCrash">
+        
+        <method name="init"></method>
+        <method name="setUserInfo"></method>
+        <method name="leaveBreadcrumb"></method>
+        <method name="test"></method>
+    </plugin>
+</uexplugins>

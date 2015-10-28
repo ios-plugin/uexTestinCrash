@@ -51,10 +51,16 @@ var param{
 */
 
 
--(void)init:(NSMutableArray *)array{
-    id info =[self getDataFromJson:array[0]];
-    [TestinAgent init:[info objectForKey:@"appKey"] channel:[info objectForKey:@"channel"]];
-    NSLog(@"init");
+-(void)init:(NSMutableArray *)inArguments{
+    if([inArguments count]==0){
+        return;
+    }
+    id info =[self getDataFromJson:inArguments[0]];
+    if(![info isKindOfClass:[NSDictionary class]]){
+        return;
+    }
+    [TestinAgent init:[info objectForKey:@"appKey"] channel:[info objectForKey:@"channel"] config:[TestinConfig defaultConfig]];
+    
 }
 
 /*
@@ -65,10 +71,15 @@ var param{
  
  注：如不设置，平台将默认显示为“匿名用户”。
  */
--(void)setUserInfo:(NSMutableArray *)array{
-    id info =[self getDataFromJson:array[0]];
+-(void)setUserInfo:(NSMutableArray *)inArguments{
+    if([inArguments count]==0){
+        return;
+    }
+    id info =[self getDataFromJson:inArguments[0]];
+    if(![info isKindOfClass:[NSDictionary class]]){
+        return;
+    }
     [TestinAgent setUserInfo:[info objectForKey:@"username"]];
-    NSLog(@"setUserInfo");
 }
 
 /*
@@ -80,27 +91,29 @@ var param{
 -(void)leaveBreadcrumb:(NSMutableArray *)array{
     id info =[self getDataFromJson:array[0]];
     [TestinAgent leaveBreadcrumbWithString:[info objectForKey:@"breadcrumb"]];
-    NSLog(@"leaveBreadcrumb");
+
 }
 
 -(void)test:(NSMutableArray *)array{
 
     NSArray *test=[[NSArray alloc] initWithObjects:@"1",@"2", nil];
-    for(int i=0;i<4;i++) NSLog(test[i]);
+    for(int i=0;i<4;i++){
+        NSLog(test[i]);
+    }
    
 }
 
 
 
 //从json字符串中获取数据
-- (id)getDataFromJson:(NSString *)jsonData{
+- (id)getDataFromJson:(NSString *)jsonString{
     NSError *error = nil;
     
     
     
-    NSData *jsonData2= [jsonData dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *jsonData= [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     
-    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData2
+    id jsonObject = [NSJSONSerialization JSONObjectWithData:jsonData
                      
                                                     options:NSJSONReadingMutableContainers
                      
