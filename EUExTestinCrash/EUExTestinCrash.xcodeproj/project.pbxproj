@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42772AA71BE062D7009DC9ED /* TestinAgent.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C659AC781AE88DEF00D885EB /* TestinAgent.framework */; };
+		0948BB3A1CFE880400063840 /* CrashMaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0948BB391CFE880400063840 /* CrashMaster.framework */; };
+		0948BB3B1CFE8BE800063840 /* CrashMaster.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0948BB391CFE880400063840 /* CrashMaster.framework */; };
 		C659AC791AE88DEF00D885EB /* EUExTestinCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = C659AC6D1AE88DEF00D885EB /* EUExTestinCrash.m */; };
-		C659AC7A1AE88DEF00D885EB /* TestinAgent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C659AC781AE88DEF00D885EB /* TestinAgent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,13 +19,14 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				42772AA71BE062D7009DC9ED /* TestinAgent.framework in CopyFiles */,
+				0948BB3B1CFE8BE800063840 /* CrashMaster.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0948BB391CFE880400063840 /* CrashMaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrashMaster.framework; sourceTree = "<group>"; };
 		C659AC521AE88DA300D885EB /* libuexTestinCrash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libuexTestinCrash.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C659AC6C1AE88DEF00D885EB /* EUExTestinCrash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExTestinCrash.h; sourceTree = "<group>"; };
 		C659AC6D1AE88DEF00D885EB /* EUExTestinCrash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EUExTestinCrash.m; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		C659AC751AE88DEF00D885EB /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
 		C659AC761AE88DEF00D885EB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
 		C659AC771AE88DEF00D885EB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
-		C659AC781AE88DEF00D885EB /* TestinAgent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TestinAgent.framework; sourceTree = "<group>"; };
 		C6A05EFB1AE891B700AD644F /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		C6A05EFC1AE891B700AD644F /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		C6A05EFD1AE891B700AD644F /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C659AC7A1AE88DEF00D885EB /* TestinAgent.framework in Frameworks */,
+				0948BB3A1CFE880400063840 /* CrashMaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +86,8 @@
 		C659AC6E1AE88DEF00D885EB /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				0948BB391CFE880400063840 /* CrashMaster.framework */,
 				C659AC6F1AE88DEF00D885EB /* SBJSON */,
-				C659AC781AE88DEF00D885EB /* TestinAgent.framework */,
 			);
 			path = sourceCode;
 			sourceTree = "<group>";

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <uexplugins>
     <plugin
-        uexName="uexTestinCrash" version="3.0.1" build="1">
-        <info>1:SDK更新至2.0.6</info>
+        uexName="uexTestinCrash" version="3.0.2" build="2">
+        <info>2:SDK更新为CrashMaster.framework,支持ipv6</info>
+        <build>1:SDK更新至2.0.6</build>
         <build>0:云测崩溃分析 for iOS</build>
     </plugin>
 </uexplugins>

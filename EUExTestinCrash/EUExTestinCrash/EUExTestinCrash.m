@@ -8,8 +8,7 @@
 
 #import "EUExTestinCrash.h"
 #import "EUExBase.h"
-#import <TestinAgent/TestinAgent.h>
-
+#import <CrashMaster/CrashMaster.h>
 @interface EUExTestinCrash()
 
 @end
@@ -59,8 +58,7 @@ var param{
     if(![info isKindOfClass:[NSDictionary class]]){
         return;
     }
-    [TestinAgent init:[info objectForKey:@"appKey"] channel:[info objectForKey:@"channel"] config:[TestinConfig defaultConfig]];
-    
+    [CrashMaster init:[info objectForKey:@"appKey"] channel:[info objectForKey:@"channel"] config:[CrashMasterConfig defaultConfig]];
 }
 
 /*
@@ -79,7 +77,7 @@ var param{
     if(![info isKindOfClass:[NSDictionary class]]){
         return;
     }
-    [TestinAgent setUserInfo:[info objectForKey:@"username"]];
+    [CrashMaster setUserInfo:[info objectForKey:@"username"]];
 }
 
 /*
@@ -90,7 +88,7 @@ var param{
  */
 -(void)leaveBreadcrumb:(NSMutableArray *)array{
     id info =[self getDataFromJson:array[0]];
-    [TestinAgent leaveBreadcrumbWithString:[info objectForKey:@"breadcrumb"]];
+    [CrashMaster leaveBreadcrumbWithString:[info objectForKey:@"breadcrumb"]];
 
 }
 
