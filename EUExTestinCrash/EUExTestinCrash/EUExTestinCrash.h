@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EUExBase.h"
+#import <AppCanKit/AppCanKit.h>
 
 @interface EUExTestinCrash : EUExBase
 

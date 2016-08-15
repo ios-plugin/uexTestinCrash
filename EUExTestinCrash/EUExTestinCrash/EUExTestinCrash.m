@@ -7,7 +7,6 @@
 //
 
 #import "EUExTestinCrash.h"
-#import "EUExBase.h"
 #import <CrashMaster/CrashMaster.h>
 @interface EUExTestinCrash()
 
@@ -21,14 +20,19 @@
 
 
 
--(id)initWithBrwView:(EBrowserView *)eInBrwView{
-    self=[super initWithBrwView:eInBrwView];
-    if(self){
-      
+//-(id)initWithBrwView:(EBrowserView *)eInBrwView{
+//    self=[super initWithBrwView:eInBrwView];
+//    if(self){
+//      
+//    }
+//    return  self;
+//}
+-(id)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine{
+    if (self = [super initWithWebViewEngine:engine]) {
+        
     }
-    return  self;
+    return self;
 }
-
 -(void)clean{
    
 }
