@@ -236,7 +236,7 @@
 		C659AC671AE88DA300D885EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CONFIGURATION_BUILD_DIR = $SRCROOT/uexTestinCrash;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -252,7 +252,7 @@
 		C659AC681AE88DA300D885EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CONFIGURATION_BUILD_DIR = $SRCROOT/uexTestinCrash;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
