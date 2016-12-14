@@ -7,7 +7,6 @@
 //
 
 #import "EUExTestinCrash.h"
-#import "EUExBase.h"
 #import <CrashMaster/CrashMaster.h>
 @interface EUExTestinCrash()
 
@@ -18,24 +17,19 @@
 @implementation EUExTestinCrash
 
 
-
-
-
--(id)initWithBrwView:(EBrowserView *)eInBrwView{
-    self=[super initWithBrwView:eInBrwView];
-    if(self){
-      
+-(id)initWithWebViewEngine:(id<AppCanWebViewEngineObject>)engine{
+    if (self = [super initWithWebViewEngine:engine]) {
+        
     }
-    return  self;
+    return self;
 }
-
 -(void)clean{
    
 }
 
 -(void)dealloc{
     [self clean];
-    [super dealloc];
+    
 }
 
 /*
@@ -54,7 +48,8 @@ var param{
     if([inArguments count]==0){
         return;
     }
-    id info =[self getDataFromJson:inArguments[0]];
+    //id info =[self getDataFromJson:inArguments[0]];
+    ACArgsUnpack(NSDictionary*info) = inArguments;
     if(![info isKindOfClass:[NSDictionary class]]){
         return;
     }
@@ -73,7 +68,8 @@ var param{
     if([inArguments count]==0){
         return;
     }
-    id info =[self getDataFromJson:inArguments[0]];
+    //id info =[self getDataFromJson:inArguments[0]];
+    ACArgsUnpack(NSDictionary*info) = inArguments;
     if(![info isKindOfClass:[NSDictionary class]]){
         return;
     }
@@ -86,8 +82,9 @@ var param{
  breadcrumb;//面包屑字符串
  }
  */
--(void)leaveBreadcrumb:(NSMutableArray *)array{
-    id info =[self getDataFromJson:array[0]];
+-(void)leaveBreadcrumb:(NSMutableArray *)inArguments{
+    //id info =[self getDataFromJson:array[0]];
+    ACArgsUnpack(NSDictionary*info) = inArguments;
     [CrashMaster leaveBreadcrumbWithString:[info objectForKey:@"breadcrumb"]];
 
 }

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-<<<<<<< HEAD
-   LastUpgradeVersion = "0800"
-=======
    LastUpgradeVersion = "0730"
->>>>>>> origin/dev-4.0
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -19,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C659AC511AE88DA300D885EB"
-               BuildableName = "libuexTestinCrash.a"
+               BuildableName = "uexTestinCrash.framework"
                BlueprintName = "EUExTestinCrash"
-               ReferencedContainer = "container:EUExTestinCrash.xcodeproj">
+               ReferencedContainer = "container:EUExTestinCrashIDE.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C659AC511AE88DA300D885EB"
-            BuildableName = "libuexTestinCrash.a"
+            BuildableName = "uexTestinCrash.framework"
             BlueprintName = "EUExTestinCrash"
-            ReferencedContainer = "container:EUExTestinCrash.xcodeproj">
+            ReferencedContainer = "container:EUExTestinCrashIDE.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C659AC511AE88DA300D885EB"
-            BuildableName = "libuexTestinCrash.a"
+            BuildableName = "uexTestinCrash.framework"
             BlueprintName = "EUExTestinCrash"
-            ReferencedContainer = "container:EUExTestinCrash.xcodeproj">
+            ReferencedContainer = "container:EUExTestinCrashIDE.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
